@@ -1,17 +1,67 @@
+body {
+	background-image: url(../images/back.jpg);
+}
+
+p {
+	color: black;
+	margin-left: 10px;
+	font-family: cursive;
+	text-align: center;
+}
+
+h1 {
+	color: darkgoldenrod;
+	font-size: 25px;
+	text-align: center;
+}
+
+h2 {
+	color: azure;
+	font-size: 40px;
+	text-align: center;
+	margin: 0px 0px 0px 10px;
+	padding: 20px 0px 20px 0px;
+}
+#buscador{
+	color: azure;
+	font-size: 30px;
+	font-style: italic;
+}
+
+#header {
+	background-color: black;
+	margin-bottom: 0px;
+}
+
+button {
+	transition-duration: 0.4s;
+	border-radius: 4px;
+	color: black;
+}
+
+.button:hover {
+	background-color: black;
+}
+
+
 .flip-container {
 	perspective: 1000px;
 }
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
 
-.flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+	transform: rotateY(180deg);
 }
 
-/* flip speed goes here */
+.flip-container,
+.front,
+.back {
+	width: 260px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+}
+
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
@@ -19,8 +69,8 @@
 	position: relative;
 }
 
-/* hide back of pane during swap */
-.front, .back {
+.front,
+.back {
 	backface-visibility: hidden;
 
 	position: absolute;
@@ -28,14 +78,48 @@
 	left: 0;
 }
 
-/* front pane, placed above back */
 .front {
 	z-index: 2;
-	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+}
+
+div.back {
+	align-items: center;
+}
+
+#fancy {
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 10px 10px 10px;
+	justify-content: space-around;
+	padding: 20px;
+	background-color: antiquewhite;
+	opacity: 0.9;
+}
+
+#principal {
+
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	background-color: brown;
+	padding: 20px;
+
+}
+
+footer {
+	text-align: center;
+	color: azure;
+}
+#oculto{
+	background-image:url(../images/Broken_Book.png);
+	width: 300px;
+	height: 300px;
+	align-content: center;
+	display: none;
 }

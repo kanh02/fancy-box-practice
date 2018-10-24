@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Bookstore</title>
-
-	<!-- CSS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/book.css">
 </head>
-<body>
-	<div class="container">
-		<div>
-			<div class="col-sm-6">
-				<img src="images/bookstore.jpg" width="450" height="200">
-			</div>
-			<div class="col-sm-6">
-				<form>
-  				Busca tu libro:
-				<input type="text" name="Search">
-				</form>
-			</div>
-			</div>
-		<div class="col-sm-12">
-		</div> 
-		<div class="flip-container" ontouchstart="this.classList.toggle('hover');" >
-			<div class="flipper" id="board">
-			
-			</div>
-		</div>
 
-			
+<body>
+	<div class="container" id="header"><h2>Bookstore Shop Online</h2></div>
+	<div class="container" id="principal">
+		<div id="buscador">
+			Busca tu libro:
+			<input type="text" id="Search" onkeyup="filter()" placeholder="Search your book.">
+		</div>
 	</div>
-	<!-- JS -->
+	<div class="container" id="fancy">
+		<div id="oculto"></div>
+	</div>
+	<footer>All rigth Reserverd |2018|</footer>
 	<script src="js/bookstore.js"></script>
 	<script src="css/book.css"></script>
-
 </body>
+
 </html>
